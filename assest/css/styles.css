@@ -111,18 +111,22 @@ a {
 .heading {
   font-family: var(--font-heading);
   font-weight: 700;
-  line-height: 1.17;
   letter-spacing: -0.02em;
   color: #171100;
 }
 
 .heading.lv1 {
   font-size: 5.8rem;
+  line-height: 1.17;
 }
 
+.heading.lv2 {
+  font-size: 3.8rem;
+  line-height: 1.26;
+}
 /* ===== Hero ===== */
 .hero {
-  padding-top: 56px;
+  padding: 56px 0 65px;
   background: #fffcf4;
 }
 
@@ -141,6 +145,8 @@ a {
   height: 685px;
   object-fit: cover;
   border-radius: 20px;
+  vertical-align: bottom;
+  /* verttical để căn cho ảnh sát xuống */
 }
 
 .hero-summary {
@@ -268,4 +274,49 @@ a {
   font-size: 4.4rem;
   line-height: 1.23;
   color: #171100;
+}
+
+/* ===== Popular ===== */
+.popular {
+  margin-top: 130px;
+  padding: 65px 0;
+  background-color: #00bfff75;
+}
+
+.popular .popular-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.popular .desc {
+  width: 458px;
+  margin-top: 16px;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 1.67;
+  color: #5f5b53;
+}
+
+.popular .contronls {
+  display: flex;
+  gap: 18px;
+}
+
+.popular .controls-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--primary-color);
+  background: transparent;
+  border-radius: 50%;
+  color: var(--primary-color);
+}
+
+.popular .controls-btn:hover {
+  cursor: pointer;
+  color: #fff;
+  background-color: var(--primary-color);
 }
