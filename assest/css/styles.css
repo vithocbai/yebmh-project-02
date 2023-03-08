@@ -420,3 +420,68 @@ a {
 .popular .item-coures .book-btn:hover {
   background: var(--primary-color);
 }
+
+/* ===== Feedback */
+.feedback {
+  margin-top: 135px;
+  padding: 96px 0;
+  background: #2e2100;
+}
+
+.item-feedback {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item-feedback .info .avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.item-feedback .info .title {
+  font-family: var(--font-heading);
+  margin-top: 18px;
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 1.42;
+  color: #f7f7f7;
+}
+
+.item-feedback .info .desc {
+  margin-top: 4px;
+}
+
+.item-feedback .dots {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 28px;
+  cursor: pointer;
+}
+
+.item-feedback .dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #634700;
+}
+
+.item-feedback .dot.active {
+  background-color: var(--primary-color);
+  cursor: default;
+}
+
+.item-feedback .main-content {
+  width: 65%;
+}
+
+.item-feedback blockquote {
+  margin-left: 30px;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 2.6rem;
+  line-height: 1.54;
+  color: #ffffff;
+}
